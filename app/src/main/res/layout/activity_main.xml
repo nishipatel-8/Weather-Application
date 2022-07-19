@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3">
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.5"
+            android:background="#C6ECE9"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:id="@+id/textField"/>
+
+        <ImageView
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.3"
+            android:src="@drawable/search"
+            android:id="@+id/search"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+        <CheckedTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEMPERATURE (in °C) "
+            android:textColor="#EEF344"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Temp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text=" "
+        android:textColor="#FFFFFF"
+        android:textSize="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <CheckedTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FEELS   LIKE (in °C)"
+            android:textColor="#EEF344"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/descText"
+        android:layout_width="match_parent"
+
+        android:layout_height="93dp"
+        android:text=" "
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <CheckedTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HUMIDITY (in %)"
+            android:textColor="#EEF344"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/humidityText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:text=" "
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <CheckedTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRESSURE (in hPa)"
+            android:textColor="#EEF344"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text=" "
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+
+
+</LinearLayout>
+
